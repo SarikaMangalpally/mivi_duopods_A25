@@ -442,11 +442,13 @@ body {
     font-size: 26px;
     margin-top: 15px;
     margin-bottom: 0;
+    text-transform: capitalize;
   }
   .main-headings {
     font-size: 48px;
     letter-spacing: 1px;
     margin: auto;
+    text-transform: capitalize;
   }
   .sounds-better-description {
     font-size: 16px;
@@ -501,7 +503,7 @@ body {
     font-size: 16px;
     line-height: 1.5em;
     color: #4b4955;
-    width: 200px;
+    min-width: 200px;
     max-width: 100%;
   }
   .long-hours-background {
@@ -515,9 +517,9 @@ body {
     grid-template-columns: 50% 50%;
   }
   .long-hours-first-grid {
-    padding-left: 30px;
-    width: 100%;
-    margin: auto;
+    min-width: 200px;
+    margin: auto 0 auto 25px;
+    max-width: 100%;
   }
   .long-hours-second-grid {
     text-align: right;
@@ -558,6 +560,7 @@ body {
     font-size: 16px;
     line-height: 1.5em;
     padding: 0 40px;
+    color: #4b4955;
   }
   /* .chills-red-duopod-image-div {
     position: relative;
@@ -580,6 +583,45 @@ body {
   .chills-data {
     position: relative;
     top: 25px;
+  }
+  .they-stay-section {
+    position: relative;
+    top: -50px;
+  }
+  .exercising-image-background-div {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(to top, #1f1927, #5c638f);
+    border-radius: 20px;
+  }
+  .exercising-image {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  .stay-heading-color {
+    color: transparent;
+    background: linear-gradient(to top, #1f1927, #5c638f);
+    background-clip: text;
+  }
+  .they-stay-description {
+    line-height: 1.5em;
+    font-size: 16px;
+    color: #4b4955;
+    padding-right: 15px;
+  }
+  .they-stay-main-div {
+    margin-left: 35px;
+    background-image: url("assets/exercise.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .they-stay-data-div {
+    width: 180px;
+    padding: 25px 0 15px;
   }
 }
 
