@@ -306,7 +306,7 @@ body {
     width: 100%;
   }
   .reviews-list li {
-    margin-left: 25px;
+    margin-right: 25px;
     list-style-type: none;
     display: block;
     background-color: #f6f7f9;
@@ -351,6 +351,125 @@ body {
     width: 50px;
     height: 50px;
     margin: auto;
+  }
+  .sound-features-section {
+    margin: 35px;
+  }
+  .sound-feature-main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    align-content: space-between;
+    grid-gap: 25px;
+  }
+  .sound-feature-main-div p {
+    font-size: 18px;
+    line-height: 1.2em;
+    text-transform: capitalize;
+  }
+  .speaker-section {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: left;
+  }
+  .alarm-section {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    right: 0;
+    text-align: right;
+  }
+  .phone-section {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: left;
+  }
+  .battery-section {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: right;
+  }
+
+  .sound-feature-image-div {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid #17203230;
+  }
+  .speaker-section img,
+  .phone-section img {
+    position: relative;
+    top: 6px;
+    left: 8px;
+    margin: auto;
+  }
+  .alarm-section img {
+    position: relative;
+    top: 7px;
+    right: 7px;
+  }
+  .battery-section img {
+    position: relative;
+    right: 12px;
+    top: 8px;
+  }
+  .sound-feature-right-sections {
+    display: grid;
+    justify-content: right;
+  }
+  .sound-feature-right-sections .sound-feature-image-div {
+    justify-self: right;
+  }
+  .music-image-background {
+    background: linear-gradient(to top, #30cbfc, #7c16fe);
+    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    /* text-align: center; */
+  }
+  .sound-section {
+    text-align: center;
+    max-height: 860px;
+  }
+  .music-note {
+    top: 10px;
+    right: 3px;
+    position: relative;
+  }
+  .subheadings {
+    font-size: 26px;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  .main-headings {
+    font-size: 48px;
+    letter-spacing: 1px;
+    margin: auto;
+  }
+  .sounds-better-description {
+    font-size: 16px;
+    line-height: 1.4em;
+    padding: 0 15px;
+    color: #4b4955;
+  }
+  .sounds-better-heading-color {
+    color: transparent;
+    background: linear-gradient(to top, #30cbfc, #7c16fe);
+    background-clip: text;
+  }
+  .sound-background {
+    background-image: url("assets/sound-background-image.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .right-blue-duopod-image {
+    position: relative;
+    object-fit: contain;
+    width: 100%;
+    bottom: 5rem;
   }
 }
 
