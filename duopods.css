@@ -679,6 +679,48 @@ body {
     margin: 45px 20px 0;
     cursor: pointer;
   }
+  .water-and-dust-section {
+    margin-top: -5em;
+  }
+  .water-and-dust-container {
+    margin-left: 33px;
+  }
+  .droplet-image-background {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    background: linear-gradient(to top, #19deeb, #27c4f5);
+  }
+  .droplet-image {
+    position: absolute;
+    top: 15px;
+    left: 13px;
+  }
+  .water-and-dust-background-color {
+    color: transparent;
+    background: linear-gradient(to top, #19deeb, #27c4f5);
+    background-clip: text;
+  }
+  .water-and-dust-description {
+    padding: 0 23px 0 0;
+    font-size: 15px;
+    line-height: 1.5em;
+    color: #4b4955;
+  }
+  .white-duopods-droplets-image-container {
+    position: relative;
+    margin: auto;
+    text-align: center;
+  }
+  .white-duopods-water-image {
+    object-fit: contain;
+    max-width: 100%;
+    position: relative;
+    bottom: 5.5rem;
+    max-height: 1000px;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 370px) {
