@@ -431,7 +431,7 @@ body {
   }
   .sound-section {
     text-align: center;
-    max-height: 860px;
+    max-height: 820px;
   }
   .music-note {
     top: 10px;
@@ -468,8 +468,66 @@ body {
   .right-blue-duopod-image {
     position: relative;
     object-fit: contain;
+    max-width: 100%;
+    bottom: 12rem;
+  }
+  .thunder-image-background {
+    background: linear-gradient(to top, #84e820, #00dc58);
+    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+  }
+  .thunder-bolt {
+    position: relative;
+    width: 25px;
+    height: 40px;
+    margin: 10px auto;
+  }
+  .long-hours-section {
+    margin-top: -5rem;
+    background-image: url("assets/long-hours-half-backgorund.png");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .long-hours-heading-color {
+    color: transparent;
+    background: linear-gradient(to top, #84e820, #00dc58);
+    background-clip: text;
+    line-height: 1em;
+    margin: 10px auto 30px;
+  }
+  .long-hours-description {
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #4b4955;
+    width: 200px;
+    max-width: 100%;
+  }
+  .long-hours-background {
+    background-image: url("assets/long-hours-half-backgorund.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+  }
+  .long-hours-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .long-hours-first-grid {
+    padding-left: 30px;
     width: 100%;
-    bottom: 5rem;
+    margin: auto;
+  }
+  .long-hours-second-grid {
+    text-align: right;
+    margin: auto;
+  }
+  .long-hours-second-grid img {
+    position: relative;
+    object-fit: cover;
+    max-width: 100%;
+    margin: auto;
   }
 }
 
