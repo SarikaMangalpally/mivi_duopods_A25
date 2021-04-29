@@ -450,7 +450,7 @@ body {
   }
   .sounds-better-description {
     font-size: 16px;
-    line-height: 1.4em;
+    line-height: 1.5em;
     padding: 0 15px;
     color: #4b4955;
   }
@@ -521,7 +521,7 @@ body {
   }
   .long-hours-second-grid {
     text-align: right;
-    margin: auto;
+    margin: auto 0;
   }
   .long-hours-second-grid img {
     position: relative;
@@ -529,13 +529,68 @@ body {
     max-width: 100%;
     margin: auto;
   }
+  .chills-section {
+    position: relative;
+  }
+  .chills-main-div {
+    position: relative;
+    margin: 35px 20px 0;
+    text-align: center;
+  }
+  .chills-image-background {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    background: linear-gradient(to top, #fc7a30, #fe1616);
+    border-radius: 20px;
+  }
+  .chills-image {
+    position: relative;
+    top: 15px;
+  }
+  .chills-heading-color {
+    background: linear-gradient(to top, #fc7a30, #fe1616);
+    background-clip: text;
+    color: transparent;
+  }
+  .chills-description {
+    font-size: 16px;
+    line-height: 1.5em;
+    padding: 0 40px;
+  }
+  /* .chills-red-duopod-image-div {
+    position: relative;
+  } */
+  .chills-red-duopod-image {
+    position: relative;
+    /* bottom: 20px; */
+    max-width: 100%;
+  }
+  .chills-background {
+    position: absolute;
+    width: 100%;
+    min-height: 440px;
+    max-height: 530px;
+    height: 100%;
+    background-color: #f6f7f9;
+    z-index: -1;
+    border-radius: 20px;
+  }
+  .chills-data {
+    position: relative;
+    top: 25px;
+  }
 }
 
-@media screen and (max-width: 360px) {
-}
 @media screen and (max-width: 370px) {
   .select-color-for-product-container p {
     margin: 10px 0 !important;
+  }
+}
+@media (min-width: 400px) and (max-width: 620px) {
+  .chills-red-duopod-image {
+    bottom: 15px;
   }
 }
 
