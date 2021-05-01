@@ -47,7 +47,7 @@ body {
   }
   .product-image-description {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.4em;
     color: #171c26;
     opacity: 0.6;
@@ -56,7 +56,7 @@ body {
   .product-sub-description {
     position: relative;
     bottom: 35px;
-    padding: 0 10px;
+    padding: 0 35px;
   }
   .product-background-image {
     position: absolute;
@@ -91,7 +91,6 @@ body {
   }
 
   .select-color-for-product-container label {
-    cursor: pointer;
     border-radius: 25px;
     position: relative;
     display: flex;
@@ -102,6 +101,7 @@ body {
     z-index: 0;
   }
   .select-color-for-product-container input {
+    cursor: pointer;
     opacity: 0;
     width: 26px;
     height: 26px;
@@ -296,7 +296,8 @@ body {
     letter-spacing: 2px;
   }
   .user-reviews-section {
-    margin: 0 20px;
+    position: relative;
+    margin-left: 20px;
   }
   .reviews-list {
     display: flex;
@@ -427,20 +428,19 @@ body {
     width: 60px;
     height: 60px;
     margin: auto;
-    /* text-align: center; */
   }
   .sound-section {
     text-align: center;
-    max-height: 820px;
+    position: relative;
   }
   .music-note {
-    top: 10px;
+    top: 12px;
     right: 3px;
     position: relative;
   }
   .subheadings {
     font-size: 26px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     margin-bottom: 0;
     text-transform: capitalize;
   }
@@ -453,25 +453,35 @@ body {
   .sounds-better-description {
     font-size: 16px;
     line-height: 1.5em;
-    padding: 0 15px;
+    padding: 0 26px;
     color: #4b4955;
+    opacity: 0.6;
   }
   .sounds-better-heading-color {
     color: transparent;
     background: linear-gradient(to top, #30cbfc, #7c16fe);
     background-clip: text;
   }
-  .sound-background {
-    background-image: url("assets/sound-background-image.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+  .sound-information-container {
+    position: absolute;
+    top: 0;
+  }
+  .right-blue-duopod-image-div {
+    position: relative;
+    top: 3.5rem;
+    background: url("assets/sound-background-image.png") no-repeat center;
+    background-size: cover;
+  }
+  .right-blue-duopod-image-div img {
+    object-fit: cover;
+    /* width: 100%; */
+    height: 100%;
   }
   .right-blue-duopod-image {
     position: relative;
     object-fit: contain;
     max-width: 100%;
-    bottom: 12rem;
+    bottom: 8rem;
   }
   .thunder-image-background {
     background: linear-gradient(to top, #84e820, #00dc58);
@@ -487,7 +497,8 @@ body {
     margin: 10px auto;
   }
   .long-hours-section {
-    margin-top: -5rem;
+    position: relative;
+    top: 2rem;
     background-image: url("assets/long-hours-half-backgorund.png");
     background-position: right;
     background-repeat: no-repeat;
@@ -505,6 +516,7 @@ body {
     color: #4b4955;
     min-width: 200px;
     max-width: 100%;
+    opacity: 0.6;
   }
   .long-hours-background {
     background-image: url("assets/long-hours-half-backgorund.png");
@@ -533,6 +545,7 @@ body {
   }
   .chills-section {
     position: relative;
+    top: 2rem;
   }
   .chills-main-div {
     position: relative;
@@ -561,13 +574,10 @@ body {
     line-height: 1.5em;
     padding: 0 40px;
     color: #4b4955;
+    opacity: 0.6;
   }
-  /* .chills-red-duopod-image-div {
-    position: relative;
-  } */
   .chills-red-duopod-image {
     position: relative;
-    /* bottom: 20px; */
     max-width: 100%;
   }
   .chills-background {
@@ -586,7 +596,7 @@ body {
   }
   .they-stay-section {
     position: relative;
-    top: -50px;
+    top: -2rem;
   }
   .exercising-image-background-div {
     position: relative;
@@ -625,8 +635,8 @@ body {
   }
   .made-in-india-section {
     text-align: center;
-    margin: 0 15px;
     position: relative;
+    top: 10rem;
   }
   .indian-flag-image-div {
     position: relative;
@@ -668,9 +678,11 @@ body {
   }
   .made-in-india-description {
     font-size: 16px;
-    line-height: 1.2em;
+    line-height: 1.4em;
     color: #4b4955;
-    padding: 0 30px;
+    padding: 20px 30px;
+    margin: 0 15px;
+    opacity: 0.8;
   }
   .video-controls-class {
     width: auto;
@@ -680,7 +692,8 @@ body {
     cursor: pointer;
   }
   .water-and-dust-section {
-    margin-top: -5em;
+    top: 8em;
+    position: relative;
   }
   .water-and-dust-container {
     margin-left: 33px;
@@ -731,6 +744,24 @@ body {
 @media (min-width: 400px) and (max-width: 620px) {
   .chills-red-duopod-image {
     bottom: 15px;
+  }
+}
+@media (max-width: 352px) {
+  .right-blue-duopod-image-div {
+    top: 10rem !important;
+  }
+}
+@media (max-width: 540px) {
+  .right-blue-duopod-image-div {
+    top: 4rem;
+  }
+  .right-blue-duopod-image-div img {
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 336px) {
+  .right-blue-duopod-image-div {
+    top: 13rem !important;
   }
 }
 
