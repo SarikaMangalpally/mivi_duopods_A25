@@ -468,7 +468,7 @@ body {
   }
   .right-blue-duopod-image-div {
     position: relative;
-    top: 3.5rem;
+    top: 4rem;
     background: url("assets/sound-background-image.png") no-repeat center;
     background-size: cover;
   }
@@ -753,10 +753,13 @@ body {
 }
 @media (max-width: 540px) {
   .right-blue-duopod-image-div {
-    top: 4rem;
+    top: 6rem;
   }
   .right-blue-duopod-image-div img {
     max-width: 100% !important;
+  }
+  .chills-section {
+    padding-top: 2.5rem !important;
   }
 }
 @media (max-width: 336px) {
