@@ -14,7 +14,7 @@ body {
     width: 100%;
     background: #f6f7f9;
   }
-  .product-view-section {
+  .product-view-first-container {
     margin: 0 20px;
   }
   .product-name {
@@ -760,6 +760,7 @@ body {
     grid-gap: 10px;
     /* justify-content: space-evenly; */
     width: 100%;
+    padding-right: 10px;
   }
   .colorful-group-blue-duopods {
     grid-column: 1/3;
