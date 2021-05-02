@@ -243,16 +243,14 @@ body {
     grid-template-columns: 1fr 0.8fr;
     grid-gap: 10px;
     margin: 0;
+    z-index: 1;
   }
   .add-to-cart-button {
-    float: right;
-    margin: auto 5px;
     grid-column: 2/3;
-    right: 20px;
-    top: 20px;
+    right: 0;
+    top: 5px;
     margin: 10px 15px;
     position: absolute;
-    width: max-content;
   }
   .add-to-cart-button a {
     padding: 1rem;
@@ -261,13 +259,15 @@ body {
     background-color: #00ff00;
     font-size: 16px;
     font-weight: 600;
-    margin: auto;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+    width: 155px;
+    position: relative;
+    display: block;
   }
   .product-price-div {
     position: relative;
-    margin: 10px auto auto 0;
+    margin: 10px;
   }
   .product-price {
     margin-bottom: 5px;
