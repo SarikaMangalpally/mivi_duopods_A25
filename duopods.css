@@ -8,6 +8,59 @@ body {
 .stars-container {
   display: flex;
 }
+.user-reviews-section {
+  position: relative;
+  margin-left: 20px;
+}
+.reviews-list {
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  padding: 0;
+  width: 100%;
+}
+.reviews-list li {
+  margin-right: 25px;
+  list-style-type: none;
+  display: block;
+  background-color: #f6f7f9;
+  text-align: center;
+}
+.review-list-item {
+  position: relative;
+  margin: auto;
+  padding: 10px 0;
+}
+.review-div {
+  display: grid;
+  grid-template-rows: 1fr 2fr 0.5fr;
+  width: 100%;
+  height: 100%;
+}
+
+.user-review-text {
+  grid-row: 2/3;
+  color: #172032;
+  text-align: center;
+  line-height: 1.3em;
+  text-transform: capitalize;
+  white-space: pre-line;
+}
+.user-name {
+  grid-row: 3/4;
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.open-quotes {
+  grid-row: 1/2;
+  background-image: url("assets/open_quotes.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
+}
 @media screen and (max-width: 767px) {
   .top-ash-div {
     height: 60px;
@@ -300,46 +353,12 @@ body {
     font-weight: 600;
     letter-spacing: 2px;
   }
-  .user-reviews-section {
-    position: relative;
-    margin-left: 20px;
-  }
-  .reviews-list {
-    display: flex;
-    overflow-x: scroll;
-    position: relative;
-    padding: 0;
-    width: 100%;
-  }
-  .reviews-list li {
-    margin-right: 25px;
-    list-style-type: none;
-    display: block;
-    background-color: #f6f7f9;
-    text-align: center;
-  }
   .review-list-item {
-    position: relative;
-    margin: auto;
-    width: 300px;
-    padding: 10px 0;
-    height: 280px;
+    width: 260px;
+    height: 260px;
   }
-  .review-div {
-    display: grid;
-    grid-template-rows: 1fr 2fr 0.5fr;
-    width: 100%;
-    height: 100%;
-  }
-
   .user-review-text {
-    grid-row: 2/3;
-    font-size: 24px;
-    color: #172032;
-    text-align: center;
-    line-height: 1.3em;
-    text-transform: capitalize;
-    white-space: pre-line;
+    font-size: 20px;
   }
   .user-name {
     grid-row: 3/4;
@@ -349,14 +368,8 @@ body {
     letter-spacing: 1px;
   }
   .open-quotes {
-    grid-row: 1/2;
-    background-image: url("assets/open_quotes.png");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 50px;
-    height: 50px;
-    margin: auto;
+    width: 40px;
+    height: 40px;
   }
   .sound-features-section {
     margin: 35px;
@@ -879,6 +892,18 @@ body {
   }
   .top-ash-div {
     display: none;
+  }
+  .review-list-item {
+    width: 320px;
+    padding: 10px 0;
+    height: 320px;
+  }
+  .user-review-text {
+    font-size: 24px;
+  }
+  .open-quotes {
+    width: 50px;
+    height: 50px;
   }
 }
 /* @media screen and (min-width: 769px) {
