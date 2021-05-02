@@ -905,6 +905,63 @@ body {
     width: 50px;
     height: 50px;
   }
+  .sound-features-section {
+    top: 4rem;
+    position: relative;
+  }
+  .sound-feature-main-div {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+  }
+  .speaker-section,
+  .alarm-section,
+  .phone-section,
+  .battery-section {
+    display: flex;
+  }
+  .speaker-section p,
+  .alarm-section p,
+  .phone-section p,
+  .battery-section p {
+    font-size: 18px;
+  }
+  .sound-feature-image-div {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #17203230;
+    margin: auto 10px;
+  }
+
+  .phone-section img,
+  .speaker-section img {
+    left: 8px;
+    position: relative;
+    top: 5px;
+    height: 36px;
+  }
+  .alarm-section img {
+    left: 6px;
+    position: relative;
+    top: 6px;
+    height: 36px;
+  }
+  .battery-section img {
+    left: 15px;
+    position: relative;
+    top: 7px;
+    height: 32px;
+  }
+}
+@media (min-width: 840px) {
+  .sound-feature-image-div {
+    margin: auto 20px;
+  }
+  .sound-feature-main-div p {
+    font-size: 20px;
+  }
 }
 /* @media screen and (min-width: 769px) {
   .top-ash-div,
