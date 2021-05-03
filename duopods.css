@@ -675,7 +675,7 @@ body {
     background-image: url("assets/made-in-india-background.png");
     background-repeat: no-repeat;
     z-index: -1;
-    top: 4rem;
+    top: 5rem;
     background-position: center;
     background-size: cover;
   }
@@ -1145,6 +1145,23 @@ body {
     margin: 30px auto;
     width: 580px;
   }
+  .india-background {
+    width: 100%;
+height: 100%;
+position: absolute;
+background-image: url("assets/tri-color-background.png");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+top: 14rem;
+left: 0.2rem;
+
+  }
+}
+@media(min-width: 768px) and (max-width: 1120px) {
+.india-background {
+  top: 15rem;
+  left: 1.5rem;
 }
 @media (min-width: 1024px) {
   .sound-feature-image-div {
