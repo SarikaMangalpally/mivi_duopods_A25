@@ -8,10 +8,7 @@ body {
 .stars-container {
   display: flex;
 }
-.user-reviews-section {
-  position: relative;
-  margin-left: 20px;
-}
+
 .reviews-list {
   display: flex;
   overflow-x: scroll;
@@ -75,6 +72,11 @@ body {
   background: linear-gradient(to top, #fc7a30, #fe1616);
   background-clip: text;
   color: transparent;
+}
+.stay-heading-color {
+  color: transparent;
+  background: linear-gradient(to top, #1f1927, #5c638f);
+  background-clip: text;
 }
 @media screen and (max-width: 767px) {
   .top-ash-div {
@@ -286,6 +288,10 @@ body {
     bottom: 0;
     height: 100%;
   }
+  .user-reviews-section {
+    position: relative;
+    margin-left: 20px;
+  }
   .review-stars-container p {
     font-size: 20px;
     margin: 15px auto;
@@ -452,11 +458,14 @@ body {
   .sound-feature-right-sections .sound-feature-image-div {
     justify-self: right;
   }
-  .music-image-background {
-    background: linear-gradient(to top, #30cbfc, #7c16fe);
+  .section-logo-icon-background {
     border-radius: 15px;
     width: 60px;
     height: 60px;
+    position: relative;
+  }
+  .music-image-background {
+    background: linear-gradient(to top, #30cbfc, #7c16fe);
     margin: auto;
   }
   .sound-section {
@@ -511,9 +520,6 @@ body {
   }
   .thunder-image-background {
     background: linear-gradient(to top, #84e820, #00dc58);
-    border-radius: 15px;
-    width: 60px;
-    height: 60px;
     text-align: center;
   }
   .thunder-bolt {
@@ -572,16 +578,12 @@ body {
     text-align: center;
   }
   .chills-image-background {
-    position: relative;
-    width: 60px;
-    height: 60px;
     margin: auto;
     background: linear-gradient(to top, #fc7a30, #fe1616);
-    border-radius: 20px;
   }
   .chills-image {
     position: relative;
-    top: 15px;
+    top: 17px;
   }
   .chills-description {
     font-size: 16px;
@@ -613,22 +615,14 @@ body {
     top: -2rem;
   }
   .exercising-image-background-div {
-    position: relative;
-    width: 60px;
-    height: 60px;
     background: linear-gradient(to top, #1f1927, #5c638f);
-    border-radius: 20px;
   }
   .exercising-image {
-    position: absolute;
+    position: relative;
     top: 15px;
     left: 15px;
   }
-  .stay-heading-color {
-    color: transparent;
-    background: linear-gradient(to top, #1f1927, #5c638f);
-    background-clip: text;
-  }
+
   .they-stay-description {
     line-height: 1.5em;
     font-size: 16px;
@@ -719,14 +713,10 @@ body {
   }
 
   .droplet-image-background {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    border-radius: 20px;
     background: linear-gradient(to top, #19deeb, #27c4f5);
   }
   .droplet-image {
-    position: absolute;
+    position: relative;
     top: 15px;
     left: 13px;
   }
@@ -889,10 +879,18 @@ body {
   .top-ash-div {
     display: none;
   }
+  .section-logo-icon-background {
+    border-radius: 20px;
+    width: 80px;
+    height: 80px;
+  }
   .review-list-item {
-    width: 320px;
-    padding: 10px 0;
-    height: 320px;
+    width: 350px;
+    /* padding: 10px 0; */
+    height: 350px;
+  }
+  .user-reviews-section {
+    position: relative;
   }
   .user-review-text {
     font-size: 24px;
@@ -957,16 +955,15 @@ body {
   }
   .music-image-background {
     background: linear-gradient(to top, #30cbfc, #7c16fe);
-    border-radius: 15px;
-    width: 70px;
-    height: 70px;
     margin: auto;
   }
   .music-note {
-    top: 15px;
-    right: 2px;
+    top: 19px;
+    right: 4px;
     font-size: 24px;
     position: relative;
+    width: 35px;
+    height: 42px;
   }
   .subheadings {
     font-size: 28px;
@@ -1027,16 +1024,13 @@ body {
   }
   .thunder-image-background {
     background: linear-gradient(to top, #84e820, #00dc58);
-    border-radius: 15px;
-    width: 70px;
-    height: 70px;
     text-align: center;
   }
   .thunder-bolt {
     position: relative;
     width: 25px;
     height: 45px;
-    margin: 12px auto;
+    top: 18px;
   }
   .long-hours-description {
     font-size: 20px;
@@ -1059,11 +1053,12 @@ body {
     text-align: center;
     margin: auto;
     max-width: 980px;
+    height: 940px;
   }
   .chills-background {
     position: absolute;
     width: 100%;
-    height: 648px;
+    height: 658px;
     background-color: #f6f7f9;
     z-index: -1;
     border-radius: 20px;
@@ -1073,25 +1068,53 @@ body {
     padding-top: 50px;
   }
   .chills-image-background {
-    position: relative;
-    width: 70px;
-    height: 70px;
-    margin: auto;
     background: linear-gradient(to top, #fc7a30, #fe1616);
-    border-radius: 20px;
+    margin: auto;
   }
   .chills-image {
     position: relative;
-    top: 20px;
-    width: 45px;
-    height: 30px;
+    top: 25px;
+    width: 50px;
+    height: 32px;
   }
   .chills-red-duopod-image {
-    width: 720px;
+    width: 680px;
     height: 720px;
     bottom: 6.5rem;
     position: relative;
     right: 2rem;
+  }
+  .they-stay-section {
+    top: 3rem;
+    position: relative;
+max-width: 1180px;
+height: 640px;
+background-image: url("assets/exercise.png");
+background-repeat: no-repeat;
+background-size: 940px;
+background-position: right center;
+  }
+  .exercising-image-background-div {
+    background: linear-gradient(to top, #1f1927, #5c638f);
+  }
+  .exercising-image {
+    position: relative;
+    top: 16px;
+    left: 21px;
+    height: 45px;
+    width: 35px;
+  }
+  .they-stay-data-div {
+    padding-left: 2.5rem;
+    max-width: 428px;
+    padding-top: 40px;
+  }
+  .they-stay-description {
+    font-size: 20px;
+    line-height: 1.5em;
+    opacity: 0.8;
+    margin: 15px 0;
+    color: #4b4955;
   }
 }
 @media (min-width: 1024px) {
@@ -1106,6 +1129,11 @@ body {
   .long-hours-second-grid img {
     right: 1.5rem;
     bottom: 0.4rem;
+  }
+}
+@media (min-width: 952px) {
+  .they-stay-data-div {
+  padding-left: 5.5rem;
   }
 }
 /* @media screen and (min-width: 769px) {
