@@ -78,6 +78,15 @@ body {
   background: linear-gradient(to top, #1f1927, #5c638f);
   background-clip: text;
 }
+.color-green {
+  color: #008000;
+}
+.color-black {
+  color: #191723;
+}
+.color-orange {
+  color: #ffa500;
+}
 @media screen and (max-width: 767px) {
   .top-ash-div {
     height: 60px;
@@ -676,15 +685,6 @@ body {
     left: 15px;
     margin: 0 auto;
   }
-  .color-green {
-    color: #008000;
-  }
-  .color-black {
-    color: #191723;
-  }
-  .color-orange {
-    color: #ffa500;
-  }
   .made-in-india-description {
     font-size: 16px;
     line-height: 1.4em;
@@ -853,7 +853,7 @@ body {
     margin-bottom: 3rem !important;
   }
 }
-@media (min-width: 615px) {
+@media (min-width: 615px) and (max-width: 767px) {
   .made-in-india-section {
     margin-bottom: 6rem !important;
   }
@@ -966,12 +966,12 @@ body {
     height: 42px;
   }
   .subheadings {
-    font-size: 28px;
+    font-size: 36px;
     margin: 25px auto 0;
   }
   .main-headings {
     margin: auto;
-    font-size: 48px;
+    font-size: 54px;
   }
   .sound-information-container {
     position: absolute;
@@ -979,11 +979,12 @@ body {
     width: 100%;
   }
   .sounds-better-description,
-  .chills-description {
+  .chills-description,
+  .made-in-india-description  {
     position: relative;
-    max-width: 800px;
-    font-size: 20px;
-    line-height: 1.4em;
+    max-width: 750px;
+    font-size: 18px;
+    line-height: 1.5em;
     margin: 10px auto;
     color: #4b4955;
     opacity: 0.8;
@@ -1020,7 +1021,7 @@ body {
     margin: auto;
     z-index: 1;
     /* padding-left: 25px; */
-    max-width: 420px;
+    max-width: 356px;
   }
   .thunder-image-background {
     background: linear-gradient(to top, #84e820, #00dc58);
@@ -1033,7 +1034,7 @@ body {
     top: 18px;
   }
   .long-hours-description {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5em;
     max-width: 420px;
     opacity: 0.8;
@@ -1043,9 +1044,9 @@ body {
 
   .long-hours-second-grid img {
     width: 100%;
-    right: 1.8rem;
+    right: 1.3rem;
     position: relative;
-    bottom: 0.6em;
+    bottom: 0.5em;
   }
   .chills-section {
     position: relative;
@@ -1087,12 +1088,12 @@ body {
   .they-stay-section {
     top: 3rem;
     position: relative;
-max-width: 1180px;
-height: 640px;
-background-image: url("assets/exercise.png");
-background-repeat: no-repeat;
-background-size: 940px;
-background-position: right center;
+    max-width: 1180px;
+    height: 640px;
+    background-image: url("assets/exercise.png");
+    background-repeat: no-repeat;
+    background-size: 940px;
+    background-position: right center;
   }
   .exercising-image-background-div {
     background: linear-gradient(to top, #1f1927, #5c638f);
@@ -1105,16 +1106,44 @@ background-position: right center;
     width: 35px;
   }
   .they-stay-data-div {
-    padding-left: 2.5rem;
-    max-width: 428px;
+    padding-left: 2.5rem;  
     padding-top: 40px;
   }
   .they-stay-description {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5em;
     opacity: 0.8;
     margin: 15px 0;
     color: #4b4955;
+    max-width: 345px;
+  }
+  .made-in-india-section {
+    top: 4rem;
+    position: relative;
+    padding-top: 8rem;
+    text-align: center;
+  }
+  .indian-flag-image-div {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: #f6f7f9;
+    border-radius: 20px;
+    margin: auto;
+  }
+  .made-in-india-section .main-headings {
+    margin: 5px auto;
+  }
+  .indian-flag {
+    position: relative;
+    top: 22px;
+    width: 45px;
+    height: 35px;
+  }
+  .video-controls-class {
+    position: relative;
+    margin: 30px auto;
+    width: 580px;
   }
 }
 @media (min-width: 1024px) {
@@ -1125,7 +1154,7 @@ background-position: right center;
     font-size: 20px;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) and (max-width: 954px) {
   .long-hours-second-grid img {
     right: 1.5rem;
     bottom: 0.4rem;
@@ -1136,232 +1165,9 @@ background-position: right center;
   padding-left: 5.5rem;
   }
 }
-/* @media screen and (min-width: 769px) {
-  .top-ash-div,
-  .product-sub-description {
-    display: none;
-  }
-  .product-view-section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1.5fr) repeat(3, 1fr);
-    max-width: 1140px;
-    margin: 50px 25px;
-    height: 100%;
-    max-height: 600px;
-    justify-content: space-between;
-  }
-  .product-image-container {
-    width: 100%;
-    max-width: 540px;
-    grid-column: 1/3;
-    grid-row: 1/6;
-    position: relative;
-  }
-  .product-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  .product-image-background {
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 540px;
-    border-radius: 20px;
-    z-index: -1;
-    max-height: 600px;
-    background-color: #f6f7f9;
-    background: linear-gradient(to bottom, #f6f7f9, #f6f7f9),
-      radial-gradient(#fbfcff, #ced1d7);
-  }
-  .product-image-background-2 {
-    position: absolute;
-    width: 100%;
-    height: 60px;
-    max-width: 540px;
-    border-radius: 0 0 20px 20px;
-    background: linear-gradient(to bottom, #fffffff1, #fffffff0);
-    z-index: -1;
-    bottom: 0;
-  }
-  .product-head-container {
-    grid-column: 3/6;
-    grid-row: 1/3;
-    height: max-content;
-    margin-left: 30px;
-  }
-
-  .product-name {
-    font-size: 64px;
-    margin: 0;
-  }
-  .subtitle-of-product-name {
-    font-size: 30px;
-    color: #4b4955;
-    margin: 10px 0;
-    width: 275px;
-    line-height: 1.2em;
-    letter-spacing: 1px;
-  }
-  .product-description {
-    opacity: 0.6;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.4em;
-    color: #4b4955;
-    margin: 0;
-    max-width: 340px;
-  }
-  .select-color-for-product-container {
-    display: block;
-    width: 275px;
-    grid-row: 3/4;
-    grid-column: 3/4;
-    margin-left: 30px;
-  }
-  .select-color-for-product-container p {
-    font-size: 12px;
-    margin: 15px 0 0;
-    color: #4b4955;
-    padding-left: 5px;
-  }
-
-  .product-color-pick-div {
-    float: left;
-    margin: auto 2px;
-    left: -5px;
-    top: 10px;
-  }
-  .product-color-pick-div {
-    width: 36px;
-    height: 36px;
-    padding: 0.5px;
-  }
-
-  .select-color-for-product-container label {
-    width: 28px;
-    height: 28px;
-    margin: 1.5px;
-  }
-  .select-color-for-product-container input {
-    width: 26px;
-    height: 26px;
-  }
-  .product-delivery-container {
-    grid-row: 5/6;
-    grid-column: 3/5;
-    display: flex;
-    margin-left: 30px;
-    justify-content: space-around;
-  }
-  .product-delivery-div {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-  .product-delivery-div img {
-    object-fit: cover;
-  }
-  .product-delivery-div p {
-    margin: auto;
-  }
-  .review-stars-container {
-    grid-row: 3/4;
-    grid-column: 4/5;
-    justify-self: right;
-    position: relative;
-  }
-  .review-stars-container img {
-    position: absolute;
-    right: 0;
-    bottom: 10px;
-    object-fit: cover;
-  }
-  .review-stars-container p {
-    position: relative;
-    top: 0;
-    right: 0;
-    margin: 10px 0 0;
-  }
-  .product-price-div {
-    grid-row: 4/5;
-    grid-column: 3/4;
-    margin-left: 30px;
-  }
-  .product-price {
-    font-size: 28px;
-    color: #4b4955;
-    margin: 15px 0;
-  }
-  .original-price {
-    font-size: 20px;
-    opacity: 0.6;
-    text-decoration: line-through;
-  }
-
-  .add-to-cart-button {
-    grid-row: 4/5;
-    position: relative;
-    grid-column: 4/5;
-  }
-  .add-to-cart-button a {
-    text-align: center;
-    background-color: #00ff00;
-    text-transform: uppercase;
-    font-size: 14px;
-
-    text-decoration: none;
-    color: #4b4955;
-    line-height: 1.2em;
-    right: 0;
-    position: absolute;
-    font-weight: 600;
-    letter-spacing: 2px;
-  }
-  .coupon-code {
-    font-size: 14px;
-    letter-spacing: 1.5px;
-    color: #962c25;
-    font-weight: 550;
-  }
-  .discount-price {
-    font-weight: 700;
-  }
-  .discount {
-    font-size: 14px;
-    color: #4b4955;
-    font-weight: lighter;
-    letter-spacing: 0.5px;
+@media (min-width: 955px){
+  .long-hours-second-grid img {
+    right: 1.2rem;
+    bottom: 0.6rem;
   }
 }
-@media (max-width: 812px) {
-}
-@media (min-width: 1024px) {
-  .add-to-cart-button a {
-    padding: 1.5rem 3.5rem;
-  }
-}
-@media (max-width: 1023px) {
-  .add-to-cart-button a {
-    padding: 1.4rem 2.5rem;
-  }
-}
-
-@media (min-width: 832px) and (max-width: 900px) {
-  .add-to-cart-button a {
-    padding: 1.3rem 1.4rem !important;
-  }
-}
-@media (min-width: 789px) and (max-width: 831px) {
-  .add-to-cart-button a {
-    padding: 1.3rem 1.2rem !important;
-  }
-}
-@media (max-width: 788px) {
-  .add-to-cart-button a {
-    padding: 1.1rem;
-  }
-} */
