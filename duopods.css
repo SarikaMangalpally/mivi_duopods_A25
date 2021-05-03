@@ -556,8 +556,9 @@ body {
   .long-hours-second-grid img {
     position: relative;
     object-fit: cover;
-    max-width: 100%;
-    margin: auto;
+    width: 225%;
+    right: 2.5em;
+    top: 10px;
   }
   .chills-section {
     position: relative;
