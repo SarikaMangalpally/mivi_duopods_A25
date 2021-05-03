@@ -71,6 +71,11 @@ body {
   background: linear-gradient(to top, #84e820, #00dc58);
   background-clip: text;
 }
+.chills-heading-color {
+  background: linear-gradient(to top, #fc7a30, #fe1616);
+  background-clip: text;
+  color: transparent;
+}
 @media screen and (max-width: 767px) {
   .top-ash-div {
     height: 60px;
@@ -578,11 +583,6 @@ body {
     position: relative;
     top: 15px;
   }
-  .chills-heading-color {
-    background: linear-gradient(to top, #fc7a30, #fe1616);
-    background-clip: text;
-    color: transparent;
-  }
   .chills-description {
     font-size: 16px;
     line-height: 1.5em;
@@ -981,9 +981,10 @@ body {
     top: 0;
     width: 100%;
   }
-  .sounds-better-description {
+  .sounds-better-description,
+  .chills-description {
     position: relative;
-    max-width: 785px;
+    max-width: 800px;
     font-size: 20px;
     line-height: 1.4em;
     margin: 10px auto;
@@ -1021,7 +1022,7 @@ body {
     display: block;
     margin: auto;
     z-index: 1;
-    padding-left: 25px;
+    /* padding-left: 25px; */
     max-width: 420px;
   }
   .thunder-image-background {
@@ -1039,7 +1040,7 @@ body {
   }
   .long-hours-description {
     font-size: 20px;
-    line-height: 1.4em;
+    line-height: 1.5em;
     max-width: 420px;
     opacity: 0.8;
     position: relative;
@@ -1048,9 +1049,49 @@ body {
 
   .long-hours-second-grid img {
     width: 100%;
-    right: 2.2rem;
+    right: 1.8rem;
     position: relative;
     bottom: 0.6em;
+  }
+  .chills-section {
+    position: relative;
+    top: 6rem;
+    text-align: center;
+    margin: auto;
+    max-width: 980px;
+  }
+  .chills-background {
+    position: absolute;
+    width: 100%;
+    height: 648px;
+    background-color: #f6f7f9;
+    z-index: -1;
+    border-radius: 20px;
+  }
+  .chills-data {
+    position: relative;
+    padding-top: 50px;
+  }
+  .chills-image-background {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    background: linear-gradient(to top, #fc7a30, #fe1616);
+    border-radius: 20px;
+  }
+  .chills-image {
+    position: relative;
+    top: 20px;
+    width: 45px;
+    height: 30px;
+  }
+  .chills-red-duopod-image {
+    width: 720px;
+    height: 720px;
+    bottom: 6.5rem;
+    position: relative;
+    right: 2rem;
   }
 }
 @media (min-width: 1024px) {
@@ -1059,6 +1100,12 @@ body {
   }
   .sound-feature-main-div p {
     font-size: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .long-hours-second-grid img {
+    right: 1.5rem;
+    bottom: 0.4rem;
   }
 }
 /* @media screen and (min-width: 769px) {
