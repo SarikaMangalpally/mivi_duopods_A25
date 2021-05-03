@@ -61,6 +61,11 @@ body {
   background-size: contain;
   margin: auto;
 }
+.sounds-better-heading-color {
+  color: transparent;
+  background: linear-gradient(to top, #30cbfc, #7c16fe);
+  background-clip: text;
+}
 @media screen and (max-width: 767px) {
   .top-ash-div {
     height: 60px;
@@ -251,8 +256,6 @@ body {
     margin: 45px 20px 20px;
   }
   .stars-container {
-    /* justify-content: center; */
-    /* background-clip: text; */
     width: max-content;
     margin: auto;
     position: relative;
@@ -267,7 +270,6 @@ body {
   }
   .background-rating-star {
     position: absolute;
-    /* background-size: 80%; */
     background: #172032;
     background-clip: text;
     width: 80%;
@@ -475,11 +477,7 @@ body {
     color: #4b4955;
     opacity: 0.6;
   }
-  .sounds-better-heading-color {
-    color: transparent;
-    background: linear-gradient(to top, #30cbfc, #7c16fe);
-    background-clip: text;
-  }
+
   .sound-information-container {
     position: absolute;
     top: 0;
@@ -934,7 +932,6 @@ body {
     border: 1px solid #17203230;
     margin: auto 10px;
   }
-
   .phone-section img,
   .speaker-section img {
     left: 8px;
@@ -954,8 +951,56 @@ body {
     top: 7px;
     height: 32px;
   }
+  .sound-section {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 14rem;
+  }
+  .music-image-background {
+    background: linear-gradient(to top, #30cbfc, #7c16fe);
+    border-radius: 15px;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+  }
+  .music-note {
+    top: 15px;
+    right: 2px;
+    font-size: 24px;
+    position: relative;
+  }
+  .subheadings {
+    font-size: 28px;
+    margin: 25px auto 0;
+  }
+  .main-headings {
+    margin: auto;
+    font-size: 48px;
+  }
+  .sound-information-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .sounds-better-description {
+    position: relative;
+    max-width: 785px;
+    font-size: 20px;
+    line-height: 1.4em;
+    margin: 10px auto;
+    color: #4b4955;
+  }
+  .right-blue-duopod-image-div {
+    position: relative;
+    top: 5rem;
+    background: url("assets/blue-duopods-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
 }
-@media (min-width: 840px) {
+@media (min-width: 1024px) {
   .sound-feature-image-div {
     margin: auto 20px;
   }
