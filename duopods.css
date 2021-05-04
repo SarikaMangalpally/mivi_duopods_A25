@@ -87,6 +87,11 @@ body {
 .color-orange {
   color: #ffa500;
 }
+.water-and-dust-background-color {
+  color: transparent;
+  background: linear-gradient(to top, #19deeb, #27c4f5);
+  background-clip: text;
+}
 @media screen and (max-width: 767px) {
   .top-ash-div {
     height: 60px;
@@ -720,10 +725,7 @@ body {
     top: 15px;
     left: 13px;
   }
-  .water-and-dust-background-color {
-    color: transparent;
-    background: linear-gradient(to top, #19deeb, #27c4f5);
-    background-clip: text;
+  .water-and-dust-font {
     font-size: 52px;
   }
   .water-and-dust-description {
@@ -792,6 +794,9 @@ body {
   .group-image-of-duopods {
     margin: 0;
     width: 100%;
+  }
+  .group-min-width-768 {
+    display: none;
   }
 }
 
@@ -968,10 +973,12 @@ body {
   .subheadings {
     font-size: 36px;
     margin: 25px auto 0;
+    text-transform: capitalize;
   }
   .main-headings {
     margin: auto;
     font-size: 54px;
+    text-transform: capitalize;
   }
   .sound-information-container {
     position: absolute;
@@ -1079,9 +1086,9 @@ body {
     height: 32px;
   }
   .chills-red-duopod-image {
-    width: 680px;
-    height: 720px;
-    bottom: 6.5rem;
+    max-width: 680px;
+    height: 680px;
+    bottom: 5.8rem;
     position: relative;
     right: 2rem;
   }
@@ -1089,11 +1096,11 @@ body {
     top: 3rem;
     position: relative;
     max-width: 1180px;
-    height: 640px;
+    height: 680px;
     background-image: url("assets/exercise.png");
     background-repeat: no-repeat;
-    background-size: 940px;
-    background-position: right center;
+    background-size: cover;
+    background-position: right;
   }
   .exercising-image-background-div {
     background: linear-gradient(to top, #1f1927, #5c638f);
@@ -1106,7 +1113,7 @@ body {
     width: 35px;
   }
   .they-stay-data-div {
-    padding-left: 2.5rem;  
+    margin-left: 2.5rem;  
     padding-top: 40px;
   }
   .they-stay-description {
@@ -1147,21 +1154,108 @@ body {
   }
   .india-background {
     width: 100%;
-height: 100%;
-position: absolute;
-background-image: url("assets/tri-color-background.png");
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-top: 14rem;
-left: 0.2rem;
-
+    height: 100%;
+    position: absolute;
+    background-image: url("assets/tri-color-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 14rem;
+    left: 0.2rem;
+  }
+  .droplet-image-background {
+    background: linear-gradient(to top, #19deeb, #27c4f5);
+  }
+  .droplet-image {
+    position : relative;
+    top: 18px;
+    left: 18px;
+    width: 42px;
+    height: 42px;
+  }
+  .water-and-dust-section {
+    position: relative;
+    top: 12rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    max-width: 1100px;
+    margin: auto;
+  }
+  .white-duopods-droplets-image-container {
+    position: relative;
+    grid-column: 2/3;
+    margin: auto;
+  }
+  .water-and-dust-container {
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    max-width: 400px;
+    justify-self: end;
+    margin-top: 7rem;
+  }
+  .water-and-dust-description {
+    line-height: 1.5em;
+    font-size: 20px;
+    color: #4B4955;
+    opacity: 0.8;
+  }
+  .colorful-by-choice-section {
+    position: relative;
+    top: 10rem;
+    margin: auto;
+    text-align: center;
+  }
+  .colorful-by-choice-description{
+    font-size: 20px;
+    margin: 15px auto 25px;
+  }
+  .group-duopods-grid {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: repeat(2, 100%);
+    grid-gap: 10px;
+    padding-right: 10px;
+  }
+  .colorful-group-blue-duopods {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    justify-self: center;
+    max-width: 100%;
+  }
+  .colorful-group-red-duopods {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: right;
+    max-width: 100%;
+  }
+  .colorful-group-black-duopod-right {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: left;
+    max-width: 100%;
+  }
+  .colorful-group-white-duopods {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    justify-self: center;
+    max-width: 100%;
+  }
+  .group-max-width-767 {
+    display:none;
+  }
+  .group-image-of-duopods {
+    margin: auto;
+    max-width: 100%;
   }
 }
 @media(min-width: 768px) and (max-width: 1120px) {
-.india-background {
-  top: 15rem;
-  left: 1.5rem;
+  .india-background {
+    top: 15rem;
+    left: 1.5rem;
+  }
 }
 @media (min-width: 1024px) {
   .sound-feature-image-div {
@@ -1179,10 +1273,10 @@ left: 0.2rem;
 }
 @media (min-width: 952px) {
   .they-stay-data-div {
-  padding-left: 5.5rem;
+  margin-left: 5rem;
   }
 }
-@media (min-width: 955px){
+@media (min-width: 955px) {
   .long-hours-second-grid img {
     right: 1.2rem;
     bottom: 0.6rem;
