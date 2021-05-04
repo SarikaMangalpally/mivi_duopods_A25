@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Collar Classic & Duopods A25</title>
   <link type="text/css" href="duopods.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/duopods.js"></script>
 </head>
 <body>
   <main>
@@ -30,23 +32,23 @@
           <p>select color</p>
           <div class="select-color-label-container">
             <label for="color-black-duopods" id="color-black-duopods">
-              <input type="radio" value='black' id="color-black-duopods" checked name="product-color">
+              <input type="radio" value='assets/black_duopods.png' id="color-black-duopods" checked name="product-color">
               <div class='product-color-pick-div'></div>
               <span class='circle-tick'></span>
             </label>
             <label for="color-red-duopods" id="color-red-duopods">
-              <input type="radio" value='red' id="color-red-duopods" name="product-color">
+              <input type="radio" value='assets/red_web_size_duopods.png' id="color-red-duopods" name="product-color">
               <div class='product-color-pick-div'></div>
               <span class='circle-tick'></span>
             </label>
             <label for="color-navy-blue-duopods" id="color-navy-blue-duopods">
-              <input type="radio" value='navy-blue' id="color-navy-blue-duopods" name="product-color">
+              <input type="radio" value='assets/blue_web_size_duopods.png' id="color-navy-blue-duopods" name="product-color">
               <div class='product-color-pick-div'>
               </div>
               <span class='circle-tick'></span>
             </label>
             <label for="color-silver-duopods" id="color-silver-duopods">
-              <input type="radio" value='silver' id="color-silver-duopods" name="product-color">
+              <input type="radio" value='assets/white_web_size_duopods.png' id="color-silver-duopods" name="product-color">
               <div class="product-color-pick-div"></div>
               <span class='circle-tick'></span>
               </label>        
@@ -84,7 +86,7 @@
           <p class="product-price"><strong>&#8377;2,500</strong> <span class="original-price">&#8377;5,700</span></p>
           <p class="discount">Get for <span class="discount-price">&#8377;2,100.</span> Use code <span class="coupon-code">MIVISALE</span></p>
         </div>
-        <p class="add-to-cart-button"><a href="#">add to cart</a></p>
+        <div class="add-to-cart-button"><a href="#"><p> add to cart</p></a></div>
       </div>
     </section>
     <section class="user-reviews-section">
@@ -195,7 +197,8 @@
             <p class="long-hours-description">We power packed these next gen earbuds with a combined battery life of upto 20 hours. 5 Hours on a single charge!</p>
           </div>
           <div class="long-hours-second-grid">
-            <img src="assets/white_duopods.png" alt="white duopods image" class="white-duopods-image">
+            <img src="assets/white_duopods.png" alt="white duopods image" class="white-duopods-image group-min-width-768">
+            <img src="assets/white_half_duopods.png" alt="white duopods image" class="white-duopods-image group-max-width-767">
           </div>
         </div>
     </section>
