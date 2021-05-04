@@ -1210,6 +1210,7 @@ body {
   .colorful-by-choice-description{
     font-size: 20px;
     margin: 15px auto 25px;
+    opacity: 0.8;
   }
   .group-duopods-grid {
     margin-top: 35px;
